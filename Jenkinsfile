@@ -4,8 +4,13 @@ pipeline {
     stage('message') {
       steps {
         echo 'bonjour '
+        echo 'abdel'
+        build 'test'
       }
     }
 
+  }
+  environment {
+    abdel = 'dev'
   }
 }
